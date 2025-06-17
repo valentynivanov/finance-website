@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - Radcliffe Financial Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding-top: 100px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        .main-content {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 2rem;
+            font-style: italic;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #2a5298;
+        }
+
+        .section h3 {
+            color: #34495e;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f1f8e9 100%);
+            border-left: 4px solid #2a5298;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border-left: 4px solid #f39c12;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            margin-top: 2rem;
+        }
+
+        .contact-info h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .data-table th {
+            background: #2a5298;
+            color: white;
+            font-weight: 600;
+        }
+
+        .data-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f5f2e8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 2rem 1rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .section ul {
+                margin-left: 1rem;
+            }
+
+            .data-table {
+                font-size: 0.9rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Radcliffe Financial Services</div>
+            <a href="#" class="back-link" onclick="history.back()">← Back to Website</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h1 class="page-title">Terms of Use</h1>
+            
+            <div class="last-updated">
+                <strong>Last Updated:</strong> June 17, 2025<br>
+                <strong>Effective Date:</strong> June 17, 2025
+            </div>
+
+            <div class="section">
+                <h2>1. Introduction and Acceptance</h2>
+                <p>Welcome to Radcliffe Financial Services ("we", "us", "our", "the Company"). These Terms of Use ("Terms") govern your access to and use of our website, services, and any related content or materials provided by us.</p>
+                
+                <p>By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our website or services.</p>
+                
+                <div class="highlight-box">
+                    <strong>Company Information:</strong><br>
+                    Radcliffe Financial Services Ltd<br>
+                    Registered in England and Wales<br>
+                    Company Number: [To be inserted]<br>
+                    Registered Office: City of London, EC2V 6DN<br>
+                    FCA Registration Number: [To be inserted]
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. Our Services</h2>
+                
+                <h3>2.1 Regulated Services</h3>
+                <p>We are authorised and regulated by the Financial Conduct Authority (FCA) to provide:</p>
+                <ul>
+                    <li>Mortgage advice and arrangement</li>
+                    <li>Insurance mediation</li>
+                    <li>Investment advice (where applicable)</li>
+                    <li>Consumer credit activities</li>
+                </ul>
+
+                <h3>2.2 Professional Services</h3>
+                <p>We also provide professional services including:</p>
+                <ul>
+                    <li>Accounting and bookkeeping</li>
+                    <li>Tax planning and compliance</li>
+                    <li>Business advisory services</li>
+                    <li>Corporate finance assistance</li>
+                    <li>Financial planning and consultation</li>
+                </ul>
+
+                <h3>2.3 Service Limitations</h3>
+                <p>Our services are subject to:</p>
+                <ul>
+                    <li>Regulatory permissions and restrictions</li>
+                    <li>Professional competence and capacity</li>
+                    <li>Applicable laws and regulations</li>
+                    <li>Terms of specific service agreements</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. Client Obligations</h2>
+                
+                <h3>3.1 Information Accuracy</h3>
+                <p>You agree to:</p>
+                <ul>
+                    <li>Provide accurate, complete, and current information</li>
+                    <li>Update us promptly of any changes to your circumstances</li>
+                    <li>Respond to our requests for information in a timely manner</li>
+                    <li>Notify us of any errors or discrepancies you identify</li>
+                </ul>
+
+                <h3>3.2 Documentation</h3>
+                <p>You must:</p>
+                <ul>
+                    <li>Provide all necessary documentation when requested</li>
+                    <li>Ensure documents are genuine and unaltered</li>
+                    <li>Maintain copies of important documents</li>
+                    <li>Comply with document retention requirements</li>
+                </ul>
+
+                <h3>3.3 Compliance</h3>
+                <p>You agree to:</p>
+                <ul>
+                    <li>Comply with all applicable laws and regulations</li>
+                    <li>Cooperate with regulatory and compliance requirements</li>
+                    <li>Not use our services for illegal purposes</li>
+                    <li>Respect intellectual property rights</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. Professional Standards and Conduct</h2>
+                
+                <h3>4.1 Regulatory Framework</h3>
+                <p>Our services are governed by:</p>
+                <ul>
+                    <li><strong>FCA Principles:</strong> Treating customers fairly and with integrity</li>
+                    <li><strong>ACCA Code of Ethics:</strong> Professional competence and due care</li>
+                    <li><strong>CIOT Standards:</strong> Tax advisory professional standards</li>
+                    <li><strong>Common Law:</strong> Fiduciary duties and care</li>
+                </ul>
+
+                <h3>4.2 Professional Indemnity</h3>
+                <p>We maintain professional indemnity insurance covering:</p>
+                <ul>
+                    <li>Minimum coverage of £1,000,000 per claim</li>
+                    <li>Aggregate annual coverage of £2,000,000</li>
+                    <li>Coverage for all regulated and professional activities</li>
+                    <li>Run-off coverage as required by regulation</li>
+                </ul>
+
+                <h3>4.3 Conflicts of Interest</h3>
+                <p>We will:</p>
+                <ul>
+                    <li>Identify and manage conflicts of interest</li>
+                    <li>Disclose material conflicts to affected clients</li>
+                    <li>Maintain appropriate Chinese walls where necessary</li>
+                    <li>Decline engagements where conflicts cannot be managed</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Fees and Payment Terms</h2>
+                
+                <h3>5.1 Fee Structure</h3>
+                <p>Our fees are determined by:</p>
+                <ul>
+                    <li>Complexity and scope of services required</li>
+                    <li>Time and resources allocated to your matter</li>
+                    <li>Regulatory and compliance requirements</li>
+                    <li>Market rates for similar services</li>
+                </ul>
+
+                <h3>5.2 Payment Terms</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Service Type</th>
+                            <th>Payment Terms</th>
+                            <th>Additional Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mortgage advice</td>
+                            <td>Upon completion or monthly</td>
+                            <td>No advice fee for certain products</td>
+                        </tr>
+                        <tr>
+                            <td>Tax services</td>
+                            <td>30 days from invoice</td>
+                            <td>Annual retainer options available</td>
+                        </tr>
+                        <tr>
+                            <td>Accounting services</td>
+                            <td>Monthly or quarterly</td>
+                            <td>Direct debit preferred</td>
+                        </tr>
+                        <tr>
+                            <td>One-off consultations</td>
+                            <td>Payment in advance</td>
+                            <td>Refundable if service not provided</td>
+                        </tr>
+                        <tr>
+                            <td>Project work</td>
+                            <td>Staged payments</td>
+                            <td>Linked to project milestones</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>5.3 Late Payment</h3>
+                <p>Late payment may result in:</p>
+                <ul>
+                    <li>Interest charges at 8% above Bank of England base rate</li>
+                    <li>Suspension of services until payment is made</li>
+                    <li>Referral to debt collection agencies</li>
+                    <li>Termination of service agreement</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>6. Limitation of Liability</h2>
+                
+                <div class="warning-box">
+                    <strong>Important:</strong> The following limitations apply to the maximum extent permitted by law. Nothing in these Terms excludes or limits our liability for death or personal injury caused by negligence, fraud, or fraudulent misrepresentation.
+                </div>
+
+                <h3>6.1 Professional Services</h3>
+                <p>Our liability for professional services is limited to:</p>
+                <ul>
+                    <li>The amount of professional indemnity insurance coverage</li>
+                    <li>Direct losses reasonably foreseeable at the time of engagement</li>
+                    <li>Losses directly caused by our negligence or breach of duty</li>
+                    <li>Claims made within the applicable limitation periods</li>
+                </ul>
+
+                <h3>6.2 Excluded Losses</h3>
+                <p>We are not liable for:</p>
+                <ul>
+                    <li>Indirect, consequential, or special damages</li>
+                    <li>Loss of profits, revenue, or business opportunities</li>
+                    <li>Losses arising from third-party actions or omissions</li>
+                    <li>Losses due to changes in law or regulation</li>
+                    <li>Technology failures beyond our reasonable control</li>
+                </ul>
+
+                <h3>6.3 Third-Party Products</h3>
+                <p>For financial products arranged through us:</p>
+                <ul>
+                    <li>Product providers are responsible for product performance</li>
+                    <li>We are not liable for product defects or failures</li>
+                    <li>Complaints should be directed to the product provider first</li>
+                    <li>Compensation schemes may provide additional protection</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>7. Intellectual Property</h2>
+                
+                <h3>7.1 Our Intellectual Property</h3>
+                <p>All content on our website and in our materials is protected by:</p>
+                <ul>
+                    <li>Copyright, trademark, and design rights</li>
+                    <li>Database rights and confidential information</li>
+                    <li>Trade secrets and know-how</li>
+                    <li>Proprietary methodologies and systems</li>
+                </ul>
+
+                <h3>7.2 Permitted Use</h3>
+                <p>You may:</p>
+                <ul>
+                    <li>View and download content for personal use</li>
+                    <li>Print single copies for your records</li>
+                    <li>Share our content with appropriate attribution</li>
+                    <li>Use our content in accordance with fair dealing provisions</li>
+                </ul>
+
+                <h3>7.3 Prohibited Use</h3>
+                <p>You may not:</p>
+                <ul>
+                    <li>Reproduce, distribute, or commercially exploit our content</li>
+                    <li>Modify, adapt, or create derivative works</li>
+                    <li>Remove copyright notices or proprietary markings</li>
+                    <li>Use our content to compete with our business</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>8. Website Terms and Conditions</h2>
+                
+                <h3>8.1 Acceptable Use</h3>
+                <p>When using our website, you must not:</p>
+                <ul>
+                    <li>Violate any applicable laws or regulations</li>
+                    <li>Transmit harmful, offensive, or inappropriate content</li>
+                    <li>Interfere with website security or functionality</li>
+                    <li>Attempt to gain unauthorized access to our systems</li>
+                    <li>Use automated tools to access or scrape our website</li>
+                </ul>
+
+                <h3>8.2 Website Availability</h3>
+                <p>We endeavor to maintain website availability but:</p>
+                <ul>
+                    <li>Cannot guarantee uninterrupted access</li>
+                    <li>May suspend access for maintenance or updates</li>
+                    <li>Are not liable for temporary unavailability</li>
+                    <li>Reserve the right to modify or discontinue services</li>
+                </ul>
+
+                <h3>8.3 User Content</h3>
+                <p>If you submit content to our website:</p>
+                <ul>
+                    <li>You grant us a license to use and display the content</li>
+                    <li>You warrant that you have the right to submit the content</li>
+                    <li>You agree the content will not infringe third-party rights</li>
+                    <li>We may remove content at our discretion</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>9. Regulatory Protections</h2>
+                
+                <h3>9.1 Financial Services Compensation Scheme (FSCS)</h3>
+                <p>Eligible clients may be entitled to compensation under the FSCS:</p>
+                <ul>
+                    <li>Up to £85,000 for deposits and investments</li>
+                    <li>Up to £50,000 for insurance claims</li>
+                    <li>Up to £85,000 for mortgage advice claims</li>
+                    <li>Subject to FSCS eligibility criteria and limits</li>
+                </ul>
+
+                <h3>9.2 Financial Ombudsman Service</h3>
+                <p>Eligible clients can refer complaints to the Financial Ombudsman Service:</p>
+                <ul>
+                    <li>Free service for eligible complainants</li>
+                    <li>Independent review of complaints</li>
+                    <li>Power to award compensation up to £355,000</li>
+                    <li>Must follow our internal complaints procedure first</li>
+                </ul>
+
+                <h3>9.3 Professional Body Protections</h3>
+                <p>Additional protections may be available through:</p>
+                <ul>
+                    <li>ACCA complaints and disciplinary procedures</li>
+                    <li>CIOT professional standards and ethics</li>
+                    <li>Professional indemnity insurance coverage</li>
+                    <li>Regulatory compensation schemes</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>10. Termination</h2>
+                
+                <h3>10.1 Termination by You</h3>
+                <p>You may terminate our services by:</p>
+                <ul>
+                    <li>Giving reasonable written notice</li>
+                    <li>Paying all outstanding fees and costs</li>
+                    <li>Providing any required documentation</li>
+                    <li>Complying with handover procedures</li>
+                </ul>
+
+                <h3>10.2 Termination by Us</h3>
+                <p>We may terminate services if:</p>
+                <ul>
+                    <li>You breach these Terms materially</li>
+                    <li>Fees remain unpaid after reasonable notice</li>
+                    <li>We are required to do so by law or regulation</li>
+                    <li>Circumstances make it inappropriate to continue</li>
+                </ul>
+
+                <h3>10.3 Effect of Termination</h3>
+                <p>Upon termination:</p>
+                <ul>
+                    <li>You must pay all outstanding fees immediately</li>
+                    <li>We will return your documents within 28 days</li>
+                    <li>Confidentiality obligations continue indefinitely</li>
+                    <li>Certain provisions of these Terms survive termination</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>11. General Provisions</h2>
+                
+                <h3>11.1 Governing Law</h3>
+                <p>These Terms are governed by English law and subject to the exclusive jurisdiction of the English courts.</p>
+
+                <h3>11.2 Entire Agreement</h3>
+                <p>These Terms, together with our Privacy Policy and any specific service agreements, constitute the entire agreement between us.</p>
+
+                <h3>11.3 Amendments</h3>
+                <p>We may update these Terms from time to time. Material changes will be notified to you in advance.</p>
+
+                <h3>11.4 Severability</h3>
+                <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+
+                <h3>11.5 Waiver</h3>
+                <p>Our failure to enforce any provision of these Terms shall not constitute a waiver of that provision.</p>
+            </div>
+
+            <div id="complaints-procedure" class="section">
+                <h2>12. Complaints Procedure</h2>
+                
+                <h3>12.1 Internal Complaints</h3>
+                <p>If you have a complaint about our services:</p>
+                <ul>
+                    <li>Contact us in writing within 6 months of the issue arising</li>
+                    <li>We will acknowledge your complaint within 3 business days</li>
+                    <li>We aim to resolve complaints within 8 weeks</li>
+                    <li>You will receive a final response or explanation of delay</li>
+                </ul>
+
+                <h3>12.2 Escalation</h3>
+                <p>If you remain dissatisfied, you may refer your complaint to:</p>
+                <ul>
+                    <li>Financial Ombudsman Service (for regulated activities)</li>
+                    <li>ACCA (for accounting and audit matters)</li>
+                    <li>CIOT (for tax advisory services)</li>
+                    <li>Legal Ombudsman (for legal services where applicable)</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>General Enquiries:</strong><br>
+                Email: enquiries@radcliffinancial.co.uk<br>
+                Phone: 020 7946 0958<br>
+                Post: Radcliffe Financial Services, City of London, EC2V 6DN</p>
+
+                <p><strong>Complaints:</strong><br>
+                Email: complaints@radcliffinancial.co.uk<br>
+                Phone: 020 7946 0958</p>
+
+                <p><strong>Regulatory Information:</strong><br>
+                FCA Register: www.fca.org.uk/register<br>
+                ACCA: www.accaglobal.com<br>
+                CIOT: www.tax.org.uk</p>
+
+                <p><strong>Business Hours:</strong><br>
+                Monday - Friday: 9:00 AM - 6:00 PM<br>
+                Saturday: 10:00 AM - 2:00 PM</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#team">Our Team</a>
+                <a href="#contact">Contact</a>
+                <a href="/privacy-policy">Privacy Policy</a
+                <a href="#complaints-procedure">Complaints Procedure</a>
+            </div>
+            <p>© 2025 Radcliffe Financial Services. All rights reserved. Authorised and regulated by the Financial Conduct Authority.</p>
+        </div>
+    </footer>
+</body>
+</html>
