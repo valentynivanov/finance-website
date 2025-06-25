@@ -1,4 +1,4 @@
- // Mobile menu toggle
+        // Mobile menu toggle
         document.getElementById('mobile-menu').addEventListener('click', () => {
             const navMenu = document.querySelector('.nav-menu');
             navMenu.classList.toggle('active');
@@ -62,4 +62,16 @@
             card.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(-5px)';
             });
+        });
+        // Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach(element => {
+            observer.observe(element);
         });
