@@ -370,7 +370,7 @@
 
         .profile-image {
             object-fit: cover;
-            object-position: 90% 50%;
+            object-position: 90% 0%;
             width: 200px;
             height: 200px;
             border-radius: 50%;
